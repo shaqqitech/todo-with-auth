@@ -4,7 +4,7 @@ import React from "react";
 
 const getTodoById = async (id) => {
   try {
-    const res = await axios.get(`http://localhost:3000/api/todos/${id}`, {
+    const res = await axios.get(`https://todo-with-auth-nine.vercel.app/api/todos/${id}`, {
       headers: { "Cache-Control": "no-store" },
     });
     return res.data;
